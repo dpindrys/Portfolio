@@ -1,0 +1,311 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/components/global"; // *always required
+// @import "foundation/components/grid";
+
+//
+// Use this grid if you want to start using the new Foundation 5 grid early.
+// It will change breakpoints to min-width: 640px and 1024px.
+//
+// @import "foundation/components/grid-5";
+//
+
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms"; // *requires components/buttons
+// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups"; // *requires components/buttons
+// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
+// @import "foundation/components/split-buttons"; // *requires components/buttons
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";  // *requires components/grid
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+
+/*Typography*/
+h1 {
+  font-family: "proxima-nova";
+  margin: 0;
+  }
+
+
+.topbg p {
+	color: white;
+}
+
+.topbg h1 {
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+	color: white;
+	font-size: 6em;
+	font-weight: bold;
+	padding-top: 10%;
+	text-align: center;
+}
+
+.topbg h2 {
+	color: white;
+	font-size: 3em;
+	font-weight: 200;
+	text-align: center;
+}
+
+.subheader {
+	padding-top:10%;
+	color: #666;
+}
+/*Global*/
+body, html {
+  height: 100%;
+//  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sticky {
+	overflow: visible;
+}
+hr {
+	border: solid #666 1px;
+
+}
+.full-width {
+	min-width: 100%;
+}
+
+.top-margin {
+	margin: 20px 0 0 0 !important;
+}
+
+.no-gutter {
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	margin: 0;
+}
+/*Header and Nav*/
+
+.topbg {
+	height: 90%;
+	padding:2em;
+	background-color: #222228;
+	background-size: cover;
+	background-position: center 0;
+	background-repeat: no-repeat;
+}
+
+.top {
+	height: 30%;
+	padding: 2em;
+}
+
+.title-area {
+	float: left;
+	padding:2em;
+}
+
+.top-bar {
+	padding:0em;
+}
+
+.section-title {
+	padding: 2em;
+	background-color: #f5f2ed;
+}
+
+.section-title h1 {
+	color: #252525;
+	font-family: serif;
+	font-style: italic;
+}
+#example {
+	margin-top: -16em;
+}
+/*Pages*/
+
+#elijah-page {
+	background-image: url('/a/i/work/elijah/topbg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#trco-page {
+	background-image: url('/a/i/work/trco/topbg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#foodallies-page {
+	background-image: url('/a/i/work/foodallies/topbg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-bottom: 2px solid #f8931f;
+	background-attachment: fixed;
+}
+
+
+/*Thumbnails*/
+.front_thumb {
+	margin-top: 1em;
+}
+
+.thumbnail {
+	margin-top: 10px;
+}
+
+.caption {
+	opacity: 1;
+	position: absolute;
+	bottom: -.5em;
+	right: 0;
+	width: 70%;
+	height: 3em;
+	padding: 1.5em;
+	background-color: #f5f2ed;
+	transition: .4s
+}
+
+
+.thumbnail:hover .caption {
+	right: 0;
+	opacity: 1;
+	height: 80%;
+}
+
+.caption h1 {
+	font-size: 1.2em;
+	font-weight: 600;
+	font-family: "proxima-nova", sans-serif;
+	color: #252525;
+	line-height: .8em;
+}
+
+.caption p {
+	transition: .4s;
+	padding-top: .8em;
+	color: #252525;
+	opacity: 0;
+	font-size: .9em
+}
+
+.caption a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.thumbnail:hover .caption p {
+	transition-delay: .35s;
+	opacity: 1;
+}
+
+#elijah {
+	border-top: #006bcd 1em solid;
+}
+
+#trco {
+	border-top: #ffd149 1em solid;
+}
+
+#gef {
+	border-top: #23408f 1em solid;
+}
+
+#foodallies {
+	border-top: #f8931f 1em solid;
+}
+
+#teotitlan {
+	border-top: #80916d 1em solid;
+}
+
+#aib {
+	border-top: #b24c3d 1em solid;
+}
+@media (max-width: 800px) {
+  .caption {
+    opacity: 1;
+    right: 0;
+    bottom: 2%;
+    height: auto;
+    width: 70%;
+  }
+
+ .thumbnail:hover .caption {
+    opacity: 1;
+    right: 0;
+    bottom: 2%;
+    height: auto;
+    width: 70%;
+}
+
+.caption h1 {
+	font-weight: 400;
+	font-size: 1em;
+	color: white;
+}
+
+.caption p {
+	display: none;
+}
+
+#elijah {
+	background-color: #006bcd;
+}
+
+#trco {
+	background-color: #ffd149;
+}
+
+#gef {
+	background-color: #23408f;
+}
+
+
+#foodallies {
+	background-color: #f8931f;
+}
+
+#teotitlan {
+	background-color: #80916d;
+}
+
+#aib {
+	background-color: #b24c3d;
+}
+}
+
